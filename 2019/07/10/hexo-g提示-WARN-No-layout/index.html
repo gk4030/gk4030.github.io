@@ -4,9 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Git 常用命令速查表, gk4030 Hexo Blog">
-    <meta name="description" content="
-">
+    <meta name="keywords" content="hexo g提示:WARN  No layout, gk4030 Hexo Blog">
+    <meta name="description" content="事出有因刚搭建完hexo并对接上github后,发现默认主题landscape不太养眼,找了一圈发现主题hexo-theme-matery正和我意.
+于是cd到themes目录下执行git clone https://github.com/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Git 常用命令速查表 | gk4030&#39;s Hexo Blog</title>
+    <title>hexo g提示:WARN  No layout | gk4030&#39;s Hexo Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -261,13 +261,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Git 常用命令速查表
+                        hexo g提示:WARN  No layout
                     </div>
                 </div>
             </div>
@@ -376,9 +376,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo/" target="_blank">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -405,7 +409,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="http://i1.fuimg.com/693401/4a9ba826d080be18.png" alt="Git 常用命令速查表"></p>
+                <h2 id="事出有因"><a href="#事出有因" class="headerlink" title="事出有因"></a>事出有因</h2><p>刚搭建完hexo并对接上github后,发现默认主题<em>landscape</em>不太养眼,找了一圈发现主题<em>hexo-theme-matery</em>正和我意.</p>
+<p>于是cd到themes目录下执行<code>git clone https://github.com/blinkfox/hexo-theme-matery.git</code>,并将原有主题压缩备份;</p>
+<p>随后执行<code>hexo g</code>,<img src="http://i1.fuimg.com/693401/736e02981225ab62.png" alt="提示如图"></p>
+<p>一时疏忽,直接<code>hexo d</code>发布后-访问网站-页面空白</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>更换主题后,需要同步修改主目录下的配置文件_config.yml</p>
+<p>将theme后面配置成themes目录下相应的主题名称,例如我的<em>hexo-theme-matery</em><br><code>theme: hexo-theme-matery</code></p>
 
             </div>
             <hr/>
@@ -564,9 +573,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Git 常用命令速查表》
+                    《hexo g提示:WARN  No layout》
                 </span> by
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/10/Git-常用命令速查表/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/10/hexo-g提示-WARN-No-layout/" property="cc:attributionName"
                rel="cc:attributionURL">
                 gk4030
             </a> is licensed under a
@@ -606,9 +615,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2019/07/10/hexo-g提示-WARN-No-layout/">
                     <div class="card-image">
@@ -627,9 +637,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -638,6 +648,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -656,19 +667,20 @@
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/10/test-my-site/">
+                <a href="/2019/07/10/Git-常用命令速查表/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="test_my_site">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Git 常用命令速查表">
                         
-                        <span class="card-title">test_my_site</span>
+                        <span class="card-title">Git 常用命令速查表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+
                         
                     </div>
                     <div class="publish-info">
