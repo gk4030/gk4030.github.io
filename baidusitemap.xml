@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2019/07/20/%E5%AE%89%E8%A3%85hexo-admin%E5%90%8E%E5%8F%B0/</loc>
+    <lastmod>2019-07-20</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2019/07/10/hexo-g%E6%8F%90%E7%A4%BA-WARN-No-layout/</loc>
     <lastmod>2019-07-20</lastmod>
   </url>  <url>
@@ -8,9 +11,6 @@
     <lastmod>2019-07-20</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2019/07/19/%E6%89%A7%E8%A1%8Chexo-new%E5%90%8E-%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80markdown%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91/</loc>
-    <lastmod>2019-07-20</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2019/07/20/%E5%AE%89%E8%A3%85hexo-admin%E5%90%8E%E5%8F%B0/</loc>
     <lastmod>2019-07-20</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2019/07/10/Quick_Start-Hexo/</loc>

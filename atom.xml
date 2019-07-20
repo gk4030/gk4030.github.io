@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>gk4030&#39;s Hexo Blog</title>
+  <title>倚梦喂马</title>
   
-  <subtitle>攻乎异端,斯害己也.</subtitle>
+  <subtitle>大道至简</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-20T06:37:10.524Z</updated>
+  <updated>2019-07-20T15:43:23.951Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/07/20/%E5%AE%89%E8%A3%85hexo-admin%E5%90%8E%E5%8F%B0/"/>
     <id>http://yoursite.com/2019/07/20/安装hexo-admin后台/</id>
     <published>2019-07-20T05:47:00.000Z</published>
-    <updated>2019-07-20T06:37:10.524Z</updated>
+    <updated>2019-07-20T15:43:23.951Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装与启动"><a href="#安装与启动" class="headerlink" title="安装与启动"></a>安装与启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># npm install --save hexo-admin</span></span><br><span class="line"><span class="comment"># hexo server -d</span></span><br><span class="line"><span class="comment"># open http://localhost:4000/admin/</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>访问 <a href="http://localhost:4000/admin/" target="_blank" rel="noopener">http://localhost:4000/admin/</a> 进入Settings设置页面,</p><p>填入相关信息后,拷贝<em>Admin Config Section</em>下自动生成的内容,追加到主配置文件<code>_config.yml</code></p>]]></content>
     
