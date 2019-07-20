@@ -4,7 +4,7 @@
   <url>
     <loc>http://yoursite.com/guestbook/index.html</loc>
     
-    <lastmod>2019-07-20T12:59:00.987Z</lastmod>
+    <lastmod>2019-07-20T14:07:46.346Z</lastmod>
     
   </url>
   
@@ -44,7 +44,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/07/10/hello-world/</loc>
+    <loc>http://yoursite.com/2019/07/10/Quick_Start-Hexo/</loc>
     
     <lastmod>2019-07-20T04:57:44.125Z</lastmod>
     
@@ -58,23 +58,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2019/07/18/markdown-test/</loc>
-    
-    <lastmod>2019-07-20T04:51:18.872Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/404.html</loc>
     
     <lastmod>2019-07-19T08:00:16.169Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/07/19/test/</loc>
-    
-    <lastmod>2019-07-19T07:13:21.871Z</lastmod>
     
   </url>
   

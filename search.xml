@@ -17,25 +17,6 @@
     
     
     <entry>
-      <title>test</title>
-      <link href="/2019/07/19/test/"/>
-      <url>/2019/07/19/test/</url>
-      
-        <content type="html"><![CDATA[<h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> tags </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>执行hexo new后,自动打开markdown文件编辑</title>
       <link href="/2019/07/19/%E6%89%A7%E8%A1%8Chexo-new%E5%90%8E-%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80markdown%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91/"/>
       <url>/2019/07/19/%E6%89%A7%E8%A1%8Chexo-new%E5%90%8E-%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80markdown%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91/</url>
@@ -49,19 +30,6 @@
             <tag> hexo </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>markdown test -目录</title>
-      <link href="/2019/07/18/markdown-test/"/>
-      <url>/2019/07/18/markdown-test/</url>
-      
-        <content type="html"><![CDATA[<h1 id="我是谁"><a href="#我是谁" class="headerlink" title="我是谁"></a>我是谁</h1><h3 id="我是帅哥"><a href="#我是帅哥" class="headerlink" title="我是帅哥"></a>我是帅哥</h3><h5 id="什么是帅哥"><a href="#什么是帅哥" class="headerlink" title="什么是帅哥"></a>什么是帅哥</h5><h3 id="我是大帅哥"><a href="#我是大帅哥" class="headerlink" title="我是大帅哥"></a>我是大帅哥</h3><h5 id="帅哥的定义"><a href="#帅哥的定义" class="headerlink" title="帅哥的定义"></a>帅哥的定义</h5><h3 id="我比你帅"><a href="#我比你帅" class="headerlink" title="我比你帅"></a>我比你帅</h3><h5 id="孤独寂寞冷"><a href="#孤独寂寞冷" class="headerlink" title="孤独寂寞冷"></a>孤独寂寞冷</h5><h5 id="人生真是寂寥如雪"><a href="#人生真是寂寥如雪" class="headerlink" title="人生真是寂寥如雪"></a>人生真是寂寥如雪</h5>]]></content>
-      
-      
       
     </entry>
     
@@ -114,8 +82,8 @@
     
     <entry>
       <title>Quick Start - Hexo</title>
-      <link href="/2019/07/10/hello-world/"/>
-      <url>/2019/07/10/hello-world/</url>
+      <link href="/2019/07/10/Quick_Start-Hexo/"/>
+      <url>/2019/07/10/Quick_Start-Hexo/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
