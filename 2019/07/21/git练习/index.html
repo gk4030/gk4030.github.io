@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="人生苦短,别和烂事纠缠."><title>git练习 | 倚梦喂马</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">git练习</h1><a id="logo" href="/.">倚梦喂马</a><p class="description">大道至简</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 主页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/guestbook/"><i class="fa fa-commenting"> 留言板</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">git练习</h1><div class="post-content"><h1 id="初始化本地仓库"><a href="#初始化本地仓库" class="headerlink" title="初始化本地仓库"></a>初始化本地仓库</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>本文在本地目录”E:\Hexo_Blog\github”下执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">Initialized empty Git repository <span class="keyword">in</span> /Users/michael/learngit/.git/</span><br></pre></td></tr></table></figure>
+
+<p>瞬间Git就把仓库建好了,而且告诉你是一个空的仓库（empty Git repository）,细心的读者可以发现当前目录下多了一个.git的目录,这个目录是Git来跟踪管理版本库的,没事千万不要手动修改这个目录里面的文件,不然改乱了,就把Git仓库给破坏了。</p>
+<p>如果你没有看到.git目录,那是因为这个目录默认是隐藏的,用ls -ah命令就可以看见。</p>
+<p>也不一定必须在空目录下创建Git仓库,选择一个已经有东西的目录也是可以的。不过,不建议你使用自己正在开发的公司项目来学习Git,否则造成的一切后果概不负责。</p>
+<h2 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h2><p>事先说明:</p>
+<ul>
+<li>只能跟踪文本文件的改动,而图片、视频这些二进制文件,虽然也能由版本控制系统管理,但没法跟踪文件的变化,只能把二进制文件每次改动串起来,也就是只知道图片从100KB改成了120KB,但到底改了啥,版本控制系统不知道,也没法知道。<blockquote>
+<p>文本是有编码的,强烈建议使用标准的UTF-8编码,推荐Notepad++的默认编码设置为<code>UTF-8 without BOM</code></p>
+</blockquote>
+</li>
+</ul>
+<p>把一个文件放到Git仓库只需要两步</p>
+<ol>
+<li><p>用命令<code>git add</code>告诉git把文件添加到仓库:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用命令<code>git commit</code>告诉git把文件提交到仓库:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"wrote a readme file"</span></span><br><span class="line">[master (root-commit) eaadf4e] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>为什么Git添加文件需要add,commit一共两步呢？因为commit可以一次提交很多文件,所以你可以多次add不同的文件,比如:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add file1.txt</span><br><span class="line">$ git add file2.txt file3.txt</span><br><span class="line">$ git commit -m <span class="string">"add 3 files."</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ol>
+<li>初始化一个Git仓库,使用git init命令。</li>
+<li>添加文件到Git仓库,分两步:</li>
+</ol>
+<ul>
+<li>使用命令<code>git add &lt;file&gt;</code>,注意,可反复多次使用,添加多个文件；</li>
+<li>使用命令<code>git commit -m &lt;message&gt;</code>,完成。</li>
+</ul>
+<hr>
+<h1 id="关联github仓库"><a href="#关联github仓库" class="headerlink" title="关联github仓库"></a>关联github仓库</h1><p>前提条件:</p>
+<ul>
+<li>创建本地仓库</li>
+<li>创建github仓库</li>
+</ul>
+<ol>
+<li><p>关联github仓库<br>在本地的E:\Hexo_Blog\github仓库下运行命令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:gk4030/hexo_DevOps.git</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>推送</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<section id="process"><div class="container"><div class="row"><div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2"><div class="timeline-centered"><div class="line"></div><div class="present">Past</div><div class="dot_tp"></div><div class="born">Now</div><div class="dot_bt"></div><div class="timeline-entry"><div class="timeline-entry-inner"><div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s"><span class="number">1</span></div><div class="timeline-label wow fadeInUp" data-wow-delay="0.2s"><span class="word">2019/07/15-接触hexo</span></div></div></div><div class="timeline-entry"><div class="timeline-entry-inner"><div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s"><span class="number">2</span></div><div class="timeline-label wow fadeInUp" data-wow-delay="0.2s"><span class="word">2019/07/20-配置hexo-maupassant模板(添加gitalk留言板,添加版权标注,hexo-wordcount),部署到github</span></div></div></div><div class="timeline-entry"><div class="timeline-entry-inner"><div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s"><span class="number">3</span></div><div class="timeline-label wow fadeInUp" data-wow-delay="0.2s"><span class="word">More</span></div></div></div></div></div></div></div></section></div></div><div id="container"></div><link rel="stylesheet" type="text/css" href="//unpkg.com/gitalk/dist/gitalk.css?v=0.0.0"><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=0.0.0"></script><script type="text/javascript" src="//unpkg.com/gitalk/dist/gitalk.min.js?v=0.0.0"></script><script>var gitalk = new Gitalk({
+  clientID: 'f6e35e9bc8127a8f7bc5',
+  clientSecret: '92eb4a004d518e1aa6b9fc771f6042a8f869eb85',
+  repo: 'gk4030.github.io',
+  owner: 'gk4030',
+  admin: ['gk4030'],
+  id: md5(location.pathname),
+  distractionFreeMode: false
+})
+gitalk.render('container')
+</script></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Local Search" type="text" name="q" results="0"><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/true/" style="font-size: 15px;">true</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/07/21/hexo保留README-md之设置skip-render/">hexo保留README.md之设置skip_render</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/21/git练习/">git练习</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/20/安装hexo-admin后台/">安装hexo admin后台</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/19/执行hexo-new后-自动打开markdown文件编辑/">执行hexo new后,自动打开markdown文件编辑</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/18/Python-Cheatsheet/">Python Cheatsheet 速查笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/10/hexo-g提示-WARN-No-layout/">hexo g提示:WARN  No layout</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/10/Git-常用命令速查表/">Git 常用命令速查表</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/07/10/Quick_Start-Hexo/">Quick Start - Hexo</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://my.oschina.net/u/614290" title="gk4030-oschina" target="_blank">gk4030-oschina</a><ul></ul><a href="http://z.arlmy.me/" title="素生(误读人生 化人生活)" target="_blank">素生(误读人生 化人生活)</a><ul></ul><a href="https://www.haomwei.com/" title="屠城(屠夫9441的博客)" target="_blank">屠城(屠夫9441的博客)</a><ul></ul><a href="https://yelog.org/" title="叶落阁" target="_blank">叶落阁</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">倚梦喂马.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
