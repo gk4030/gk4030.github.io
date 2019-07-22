@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-21T13:44:51.983Z</updated>
+  <updated>2019-07-22T09:17:28.472Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019年第29周-周报</title>
+    <link href="http://yoursite.com/2019/07/22/2019%E5%B9%B4%E7%AC%AC29%E5%91%A8-%E5%91%A8%E6%8A%A5/"/>
+    <id>http://yoursite.com/2019/07/22/2019年第29周-周报/</id>
+    <published>2019-07-22T09:13:51.000Z</published>
+    <updated>2019-07-22T09:17:28.472Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="本周完成"><a href="#本周完成" class="headerlink" title="本周完成"></a>本周完成</h2><ol><li>处理前海离线集群loader抽取sftp文件失败问题.</li><li>处理渠道集群故障文件系统告警及节点故障.</li><li>搭建西丽风险舆情集群.</li><li>处理渠道集群spark应用程序执行异常.</li><li>补充大数据集群业务系统等管理信息.</li><li>告警处理:优化告警JobHistory2x进程堆内存使用超出阈值等8套集群.</li><li>安装前海离线分析HD集群业务python模块.</li><li>升级西丽云平台物理机bios并重启云平台系统.</li><li>处理渠道测试集群spark任务报错.</li><li>处理云平台底层物理机故障,cpu故障,协调整改.</li><li>处理西丽离线分析集群节点故障.</li><li>总结Manage One OC纳管测试环境大数据集群文档.</li><li>总结hbase读取数据异常问题的文档.</li><li>二次开发支持,定位应用报错”java.io.NotSerializableException”.</li><li>处理前海实时决策的大量磁盘告警,监控并督促业务定期清理垃圾数据.</li><li>处理spark2-shell无法使用问题,业务修改系统环境变量导致.</li><li>搭建数仓准实时测试集群,6.5.1版本.</li><li>grafana展示集群/节点异常指标并分批整改.</li><li>采集RTDDB指标并grafana展示.</li><li>yarn监控程序开发并部署.</li><li>测试livy对接FI集群.</li></ol><h2 id="下周计划"><a href="#下周计划" class="headerlink" title="下周计划"></a>下周计划</h2><ol><li>测试FI集群标签调度.</li><li>纳管新上线集群,包括:OC纳管/采集纳管/FusionCare纳管/告警纳管.</li><li>grafana展示集群/节点异常指标并分批整改.</li><li>升级渠道3套集群,并配置互信.</li><li>大数据物理机合规项检查.</li><li>优化yarn监控程序.</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      概览: 第29周(20190715~21)周报
+    
+    </summary>
+    
+    
+      <category term="周报" scheme="http://yoursite.com/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo保留README.md之设置skip_render</title>
@@ -41,7 +61,7 @@
     <link href="http://yoursite.com/2019/07/21/git%E7%BB%83%E4%B9%A0/"/>
     <id>http://yoursite.com/2019/07/21/git练习/</id>
     <published>2019-07-21T07:58:45.000Z</published>
-    <updated>2019-07-21T13:44:57.802Z</updated>
+    <updated>2019-07-21T13:54:40.482Z</updated>
     
     <content type="html"><![CDATA[<h1 id="初始化本地仓库"><a href="#初始化本地仓库" class="headerlink" title="初始化本地仓库"></a>初始化本地仓库</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>本文在本地目录”E:\Hexo_Blog\github”下执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">Initialized empty Git repository <span class="keyword">in</span> /Users/michael/learngit/.git/</span><br></pre></td></tr></table></figure><p>瞬间Git就把仓库建好了,而且告诉你是一个空的仓库（empty Git repository）,细心的读者可以发现当前目录下多了一个.git的目录,这个目录是Git来跟踪管理版本库的,没事千万不要手动修改这个目录里面的文件,不然改乱了,就把Git仓库给破坏了。</p><p>如果你没有看到.git目录,那是因为这个目录默认是隐藏的,用ls -ah命令就可以看见。</p><p>也不一定必须在空目录下创建Git仓库,选择一个已经有东西的目录也是可以的。不过,不建议你使用自己正在开发的公司项目来学习Git,否则造成的一切后果概不负责。</p><h2 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h2><p>事先说明:</p><ul><li>只能跟踪文本文件的改动,而图片、视频这些二进制文件,虽然也能由版本控制系统管理,但没法跟踪文件的变化,只能把二进制文件每次改动串起来,也就是只知道图片从100KB改成了120KB,但到底改了啥,版本控制系统不知道,也没法知道。<blockquote><p>文本是有编码的,强烈建议使用标准的UTF-8编码,推荐Notepad++的默认编码设置为<code>UTF-8 without BOM</code></p></blockquote></li></ul><p>把一个文件放到Git仓库只需要两步</p><ol><li><p>用命令<code>git add</code>告诉git把文件添加到仓库:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add readme.txt</span><br></pre></td></tr></table></figure></li><li><p>用命令<code>git commit</code>告诉git把文件提交到仓库:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">"wrote a readme file"</span></span><br><span class="line">[master (root-commit) eaadf4e] wrote a readme file</span><br><span class="line"> 1 file changed, 2 insertions(+)</span><br><span class="line"> create mode 100644 readme.txt</span><br></pre></td></tr></table></figure></li></ol><p>为什么Git添加文件需要add,commit一共两步呢？因为commit可以一次提交很多文件,所以你可以多次add不同的文件,比如:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add file1.txt</span><br><span class="line">$ git add file2.txt file3.txt</span><br><span class="line">$ git commit -m <span class="string">"add 3 files."</span></span><br></pre></td></tr></table></figure><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ol><li>初始化一个Git仓库,使用git init命令。</li><li>添加文件到Git仓库,分两步:</li></ol><ul><li>使用命令<code>git add &lt;file&gt;</code>,注意,可反复多次使用,添加多个文件；</li><li>使用命令<code>git commit -m &lt;message&gt;</code>,完成。</li></ul><hr><h1 id="关联github仓库"><a href="#关联github仓库" class="headerlink" title="关联github仓库"></a>关联github仓库</h1><p>前提条件:</p><ul><li>创建本地仓库</li><li>创建github仓库</li></ul><ol><li><p>关联github仓库<br>在本地的E:\Hexo_Blog\github仓库下运行命令:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:gk4030/hexo_DevOps.git</span><br></pre></td></tr></table></figure></li><li><p>推送</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
@@ -51,8 +71,6 @@
     
     </summary>
     
-    
-      <category term="true" scheme="http://yoursite.com/tags/true/"/>
     
   </entry>
   
