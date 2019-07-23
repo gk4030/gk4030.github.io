@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>2019年第29周-周报</title>
-      <link href="/2019/07/22/2019%E5%B9%B4%E7%AC%AC29%E5%91%A8-%E5%91%A8%E6%8A%A5/"/>
-      <url>/2019/07/22/2019%E5%B9%B4%E7%AC%AC29%E5%91%A8-%E5%91%A8%E6%8A%A5/</url>
-      
-        <content type="html"><![CDATA[<h2 id="本周完成"><a href="#本周完成" class="headerlink" title="本周完成"></a>本周完成</h2><ol><li>处理前海离线集群loader抽取sftp文件失败问题.</li><li>处理渠道集群故障文件系统告警及节点故障.</li><li>搭建西丽风险舆情集群.</li><li>处理渠道集群spark应用程序执行异常.</li><li>补充大数据集群业务系统等管理信息.</li><li>告警处理:优化告警JobHistory2x进程堆内存使用超出阈值等8套集群.</li><li>安装前海离线分析HD集群业务python模块.</li><li>升级西丽云平台物理机bios并重启云平台系统.</li><li>处理渠道测试集群spark任务报错.</li><li>处理云平台底层物理机故障,cpu故障,协调整改.</li><li>处理西丽离线分析集群节点故障.</li><li>总结Manage One OC纳管测试环境大数据集群文档.</li><li>总结hbase读取数据异常问题的文档.</li><li>二次开发支持,定位应用报错”java.io.NotSerializableException”.</li><li>处理前海实时决策的大量磁盘告警,监控并督促业务定期清理垃圾数据.</li><li>处理spark2-shell无法使用问题,业务修改系统环境变量导致.</li><li>搭建数仓准实时测试集群,6.5.1版本.</li><li>grafana展示集群/节点异常指标并分批整改.</li><li>采集RTDDB指标并grafana展示.</li><li>yarn监控程序开发并部署.</li><li>测试livy对接FI集群.</li></ol><h2 id="下周计划"><a href="#下周计划" class="headerlink" title="下周计划"></a>下周计划</h2><ol><li>测试FI集群标签调度.</li><li>纳管新上线集群,包括:OC纳管/采集纳管/FusionCare纳管/告警纳管.</li><li>grafana展示集群/节点异常指标并分批整改.</li><li>升级渠道3套集群,并配置互信.</li><li>大数据物理机合规项检查.</li><li>优化yarn监控程序.</li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 周报 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo保留README.md之设置skip_render</title>
       <link href="/2019/07/21/hexo%E4%BF%9D%E7%95%99README-md%E4%B9%8B%E8%AE%BE%E7%BD%AEskip-render/"/>
       <url>/2019/07/21/hexo%E4%BF%9D%E7%95%99README-md%E4%B9%8B%E8%AE%BE%E7%BD%AEskip-render/</url>
