@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/guestbook/index.html</loc>
+    
+    <lastmod>2019-07-23T04:27:10.217Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/07/21/git%E7%BB%83%E4%B9%A0/</loc>
     
     <lastmod>2019-07-21T13:54:40.482Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2019/07/20/%E5%AE%89%E8%A3%85hexo-admin%E5%90%8E%E5%8F%B0/</loc>
     
     <lastmod>2019-07-20T15:43:23.951Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/guestbook/index.html</loc>
-    
-    <lastmod>2019-07-20T14:07:46.346Z</lastmod>
     
   </url>
   

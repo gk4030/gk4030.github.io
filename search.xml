@@ -100,19 +100,6 @@
     
     
     <entry>
-      <title>Git 常用命令速查表</title>
-      <link href="/2019/07/10/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
-      <url>/2019/07/10/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/</url>
-      
-        <content type="html"><![CDATA[<p><img src="http://i1.fuimg.com/693401/4a9ba826d080be18.png" alt="Git 常用命令速查表"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Quick Start - Hexo</title>
       <link href="/2019/07/10/Quick_Start-Hexo/"/>
       <url>/2019/07/10/Quick_Start-Hexo/</url>
@@ -126,6 +113,19 @@
             <tag> hexo </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git 常用命令速查表</title>
+      <link href="/2019/07/10/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
+      <url>/2019/07/10/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<p><img src="http://i1.fuimg.com/693401/4a9ba826d080be18.png" alt="Git 常用命令速查表"></p>]]></content>
+      
+      
       
     </entry>
     

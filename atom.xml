@@ -131,24 +131,6 @@
   </entry>
   
   <entry>
-    <title>Git 常用命令速查表</title>
-    <link href="http://yoursite.com/2019/07/10/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
-    <id>http://yoursite.com/2019/07/10/Git-常用命令速查表/</id>
-    <published>2019-07-10T09:05:48.000Z</published>
-    <updated>2019-07-20T04:56:10.321Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="http://i1.fuimg.com/693401/4a9ba826d080be18.png" alt="Git 常用命令速查表"></p>]]></content>
-    
-    <summary type="html">
-    
-      图片
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Quick Start - Hexo</title>
     <link href="http://yoursite.com/2019/07/10/Quick_Start-Hexo/"/>
     <id>http://yoursite.com/2019/07/10/Quick_Start-Hexo/</id>
@@ -165,6 +147,24 @@
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git 常用命令速查表</title>
+    <link href="http://yoursite.com/2019/07/10/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5%E8%A1%A8/"/>
+    <id>http://yoursite.com/2019/07/10/Git-常用命令速查表/</id>
+    <published>2019-07-10T09:05:48.000Z</published>
+    <updated>2019-07-20T04:56:10.321Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://i1.fuimg.com/693401/4a9ba826d080be18.png" alt="Git 常用命令速查表"></p>]]></content>
+    
+    <summary type="html">
+    
+      图片
+    
+    </summary>
+    
     
   </entry>
   
