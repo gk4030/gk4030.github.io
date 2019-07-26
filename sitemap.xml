@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/07/26/test-hexo-blog-encrypt/</loc>
+    
+    <lastmod>2019-07-26T07:02:15.937Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2019-07-25T08:02:19.803Z</lastmod>
